@@ -5,7 +5,7 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.title}>React Native</Text>
       <Text style={styles.subtitle}>Mi primera pantalla</Text>
-      <Text style={styles.course}>Curso 2026/27</Text>
+      <Text style={styles.curso}>Curso 2026/27</Text>
     </View>
   );
 }
@@ -15,22 +15,23 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f1f5f9',
+    backgroundColor: '#1e293b',
   },
   title: {
-    fontSize: 32,
+    fontSize: 30,
     fontWeight: 'bold',
-    color: '#0f172a',
+    color: 'white',
   },
   subtitle: {
     marginTop: 8,
+    fontSize: 16,
+    color: '#869bb8',
+  },
+  curso: {
+    marginTop: 8,
     fontSize: 18,
-    color: '#475569',
-  },
-  course: {
-    marginTop: 24,
-    fontSize: 14,
-    color: '#94a3b8',
-    fontWeight: '500',
-  },
+    color: '#98eaff',
+    fontWeight: 'bold',
+
+  }
 });
