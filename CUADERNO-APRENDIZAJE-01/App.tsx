@@ -1,13 +1,29 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.card}>
-        <Text style={styles.title}>¡Bienvenido!</Text>
-        <Text style={styles.subtitle}>Diseño de interfaces con React Native</Text>
-        <View style={styles.button}>
-          <Text style={styles.buttonText}>COMENZAR</Text>
+        <Image
+          source={{ uri: 'https://i.pravatar.cc/300' }}
+          style={styles.avatar}
+        />
+        <Text style={styles.name}>Laura Martínez</Text>
+        <Text style={styles.job}>Diseñadora UX/UI</Text>
+
+        <View style={styles.stats}>
+          <View style={styles.stat}>
+            <Text style={styles.number}>24</Text>
+            <Text>Proyectos</Text>
+          </View>
+          <View style={styles.stat}>
+            <Text style={styles.number}>1280</Text>
+            <Text>Seguidores</Text>
+          </View>
+          <View style={styles.stat}>
+            <Text style={styles.number}>86</Text>
+            <Text>Contactos</Text>
+          </View>
         </View>
       </View>
     </View>
@@ -22,31 +38,36 @@ const styles = StyleSheet.create({
     backgroundColor: '#1e293b',
   },
   card: {
-    backgroundColor: '#fff7ed',
+    backgroundColor: 'white',
     padding: 28,
-    borderRadius: 20,
+    borderRadius: 22,
+    alignItems: 'center',
   },
-  title: {
-    fontSize: 22,
+  avatar: {
+    width: 110,
+    height: 110,
+    borderRadius: 55,
+  },
+  name: {
+    marginTop: 4,
+    fontSize: 20,
     fontWeight: 'bold',
-    color: "#9a3412"
-  
   },
-  subtitle: {
-    marginTop: 22,
-    fontSize: 22,
+  job: {
+    marginTop: 28,
+    fontSize: 20,
     color: '#64748b',
   },
-  button: {
+  stats: {
+    flexDirection: 'row',
+    gap: 36,
     marginTop: 24,
-    backgroundColor: '#ea580c',
-    padding: 15,
-    borderRadius: 12,
   },
-  buttonText: {
-    color: 'white',
-    textAlign: 'center',
+  stat: {
+    alignItems: 'center',
+  },
+  number: {
+    fontSize: 21,
     fontWeight: 'bold',
-    fontSize: 22,
   },
 });
