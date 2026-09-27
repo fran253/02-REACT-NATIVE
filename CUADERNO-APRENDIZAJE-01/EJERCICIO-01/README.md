@@ -17,4 +17,4 @@ Text es un componente específico y obligatorio que se utiliza exclusivamente pa
 - He cambiado la paleta de colores predeterminada de la guía por un fondo oscuro con tonos azules y blancos, y le he aplicado negrita al nuevo texto para darle más contraste.
 
 ## Resultado
-La interfaz muestra una pantalla centrada en vertical y horizontal con un fondo oscuro, un título principal grande en blanco, un subtítulo gris y el texto del curso destacado en un tono cian brillante.
+La interfaz muestra una pantalla centrada en vertical y horizontal con un fondo oscuro, un título principal grande en blanco, un subtítulo gris y el texto del curso destacado en un tono cian brillante
